@@ -22,7 +22,6 @@ Use the perplexity mcp to research @[your-website-url]
 I want to understand their services, who they serve, key competitors in
 their local market as well as other competitors they could be
 competing against, identify other market leaders in their niche
-
 ```
 
 **What You'll Get:**
@@ -34,6 +33,39 @@ competing against, identify other market leaders in their niche
 - Industry leaders and benchmarks
 
 **Expected Output:** 2-3 pages of detailed analysis covering your business model, target customers, and competitive environment.
+
+**Expected feedback:** Ensure that the output is consistent with your desired target audience. Suggest tweaks or further research to identify the audience you are truly trying to target.
+
+## Key Thought Leaders & Competitors Analysis
+
+### The "Boring Marketer" (James) - BoringMarketing.com
+
+**Positioning & Philosophy:**
+- Co-founder of BoringMarketing.com (with Greg Isenberg), based in Charlotte, US
+- Advocates for "boring" marketing: sustainable, scalable, data-driven processes over flashy trends
+- Core thesis: Repetitive, process-oriented marketing yields better long-term results than trendy tactics
+- Emphasizes AI-assisted workflows and "SEO 2.0" methodology for organic growth
+
+**Key Differentiators:**
+- **High-Velocity Experimentation**: Runs 100+ marketing experiments with 1-week turnarounds vs. traditional quarterly cycles
+- **AI-Native Approach**: Uses AI agents for workflow automation while keeping "human in the loop" for oversight
+- **No Long Contracts**: Flexible, results-focused engagements vs. traditional 6-12 month retainers
+- **Global Talent Strategy**: 45-person team with $720K annual savings through remote, distributed workforce
+
+**Methodologies:**
+- **SEO 2.0**: AI-powered discovery using search data + LLMs to find unique market angles beyond keyword-centric SEO
+- **Automated Content Generation**: AI + expert review system for authentic, brand-aligned content at scale
+- **30-Day SEO Sprint**: Structured approach to discover and implement actionable growth strategies
+- **Continuous Optimization**: Real-time testing and iteration vs. static campaign management
+
+**Competitive Positioning:**
+- Directly competes with traditional agencies through speed and efficiency advantages
+- Targets brands seeking "high-velocity, AI-powered growth with minimized manual overhead"
+- Appeals to companies wanting agility and reduced commitment risk
+- Positions against agencies that rely heavily on human labor or slower manual processes
+
+**Relevance to Your Market Position:**
+The "boring marketer" approach represents a significant competitive framework in the AI marketing automation space. His emphasis on sustainable, process-driven growth aligns with your vibe marketing methodology, but focuses more on operational efficiency than emotional intelligence. This creates an opportunity for differentiation around the "human creativity + AI execution" angle that vibe marketing emphasizes.
 
 ---
 

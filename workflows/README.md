@@ -4,23 +4,7 @@ This directory contains interactive workflow guides that combine human strategic
 
 ## Workflow Structure
 
-### `/seo/` - Search Engine Optimization
-Strategic workflows for SEO research, content planning, and competitive analysis.
-
-### `/content/` - Content Strategy & Creation
-End-to-end content planning, from ideation to distribution strategy.
-
-### `/social/` - Social Media Strategy
-Platform-specific strategy development and audience research workflows.
-
-### `/email/` - Email Marketing
-List building, segmentation research, and campaign strategy workflows.
-
-### `/analytics/` - Performance Analysis
-Data analysis workflows for campaign optimization and strategic insights.
-
-### `/research/` - Market & Audience Research
-Comprehensive research methodologies for understanding markets, competitors, and audiences.
+### `/strategy/` - Strategy workflow to generate your dynamic documents which dictates your overall marketing strategy, including brand analysis, tone of voice and target audience. 
 
 ## How to Use Workflows
 
