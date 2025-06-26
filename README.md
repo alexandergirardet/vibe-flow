@@ -33,11 +33,11 @@ marketing/
 │   ├── brand_analysis.md        # Brand positioning
 │   └── market_research.md       # Audience insights
 ├── content/                      # Content pipeline
-│   ├── drafts/                  # Auto-generated from Airtable
-│   ├── review/                  # In review process
-│   ├── approved/                # Ready for publishing
-│   ├── published/               # Live content archive
-│   ├── blog-posts/              # Published blog content
+│   ├── blog-posts/              # Blog content pipeline
+│   │   ├── drafts/              # Auto-generated from Airtable
+│   │   ├── review/              # In review process
+│   │   ├── approved/            # Ready for publishing
+│   │   └── published/           # Live blog content
 │   ├── case-studies/            # Case study collection
 │   ├── newsletters/             # Newsletter archives
 │   └── social-content/          # Social media content
