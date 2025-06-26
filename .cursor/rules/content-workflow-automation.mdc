@@ -44,3 +44,17 @@ This repository follows a specific structure for systematic content marketing:
 
 ## File Naming Conventions
 - Blog posts: `YYYY-MM-DD-descriptive-title.md`
+
+/workflows/
+  /seo/
+    - content-strategy-research.md (your example)
+    - keyword-gap-analysis.md
+    - competitor-content-audit.md
+    
+  /social/
+    - platform-strategy-development.md
+    - influencer-research-workflow.md
+  /email/
+    - list-segmentation-research.md
+  /content/
+    - editorial-calendar-planning.md
