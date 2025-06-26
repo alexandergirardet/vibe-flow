@@ -1,0 +1,43 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Blog Strategy & SEO Guidelines
+
+## Scope: strategy/blog/
+All blog-specific strategy work, SEO analysis, and content planning should be organized in [strategy/blog/](mdc:strategy/blog).
+
+## Blog Strategy Structure
+
+### Core Blog Strategy Documents
+- **SEO Analysis**: Keyword research, search intent mapping, competitive SERP analysis
+- **Content Planning**: Blog content calendar, topic clusters, pillar page strategy
+- **Performance Analytics**: Blog traffic analysis, conversion tracking, content ROI
+- **Distribution Strategy**: Blog syndication, social amplification, newsletter integration
+
+### SEO-Specific Analysis
+When working on SEO for blog content:
+1. **Keyword Strategy**: Document target keywords and search intent mapping
+2. **Content Gaps**: Identify underserved topics in your niche
+3. **Competitive Analysis**: Track competitor blog strategies and performance
+4. **Technical SEO**: Blog-specific technical requirements and optimizations
+
+### Integration with Main Strategy
+Blog strategy must align with core strategy documents:
+- Reference [tone_of_voice.md](mdc:strategy/tone_of_voice.md) for consistent brand voice
+- Use [competitor_tracking.md](mdc:strategy/competitor_tracking.md) for competitive context
+- Apply insights from [brand_analysis.md](mdc:strategy/brand_analysis.md) for positioning
+
+### Content Template Alignment
+Blog strategy should inform template usage:
+- [blog-post-template.md](mdc:templates/blog-post-template.md) structure and optimization
+- SEO metadata requirements in frontmatter
+- Internal linking strategy for topic clusters
+- Call-to-action optimization for conversion goals
+
+## File Organization
+- SEO analysis: `strategy/blog/seo-analysis-YYYY-MM.md`
+- Content planning: `strategy/blog/content-plan-YYYY-QX.md`
+- Performance reviews: `strategy/blog/performance-review-YYYY-MM.md`
+- Competitive research: `strategy/blog/competitor-blog-analysis.md`

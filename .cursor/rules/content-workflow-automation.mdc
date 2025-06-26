@@ -1,0 +1,46 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Content Workflow Automation
+
+## GitHub-Native Content Operations
+
+### Repository Structure
+This repository follows a specific structure for systematic content marketing:
+- [@strategy](mdc:strategy) - Living strategy documents and analysis
+- [content/](mdc:content) - Published content organized by type
+- [templates/](mdc:templates) - Reusable content frameworks
+- [automation/](mdc:automation) - N8N workflows and Airtable schemas
+
+### Content Creation Process
+1. **Strategy Reference**: Always consult @strategy folder before creating content
+2. **Template Usage**: Start with appropriate template from [templates/](mdc:templates)
+3. **Version Control**: Treat each content piece as a feature branch
+4. **Automated Research**: Use N8N workflows to gather market intelligence
+5. **AI-Assisted Generation**: Generate content following brand guidelines
+6. **Collaborative Review**: Use pull requests for content approval
+
+### Integration Points
+
+#### Airtable Content Calendar
+- Content ideas tracked in [content-calendar-schema.json](mdc:automation/airtable-schemas/content-calendar-schema.json)
+- Status pipeline: Idea → Research → In Progress → Review → Published
+- Performance metrics automatically tracked post-publication
+
+#### N8N Automation Workflows
+- Research workflow triggered by new Airtable entries
+- Content generation using strategy documents and templates
+- GitHub commits created automatically for review process
+- Multi-platform distribution upon approval
+
+### Quality Standards
+- Every piece must include specific data and timeframes
+- Open with human moments following Alexander's narrative style
+- Include clear, actionable frameworks
+- Maintain collaborative rather than prescriptive tone
+- Reference [.cursorrules](mdc:.cursorrules) for consistent voice
+
+## File Naming Conventions
+- Blog posts: `YYYY-MM-DD-descriptive-title.md`

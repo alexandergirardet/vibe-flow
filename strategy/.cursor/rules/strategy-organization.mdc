@@ -1,0 +1,37 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Strategy Folder Organization
+
+## Overview
+All strategy workflows and outputs must be scoped to the [@strategy](mdc:strategy) folder. This ensures consistent organization and easy access to strategic documents.
+
+## Folder Structure
+
+### Core Strategy Areas
+- **Tone of Voice**: All brand voice guidelines, writing patterns, and communication style documentation
+- **Target Audience Analysis**: Audience research, personas, and demographic insights
+- **Competitor Tracking/Analysis**: Competitive intelligence, market positioning, and competitor content analysis
+
+### Specialized Strategy Areas
+- **Blog Strategy**: SEO analysis, content planning, and blog-specific strategic insights should be scoped to `strategy/blog/`
+
+## File Organization Rules
+
+### When working on strategy documents:
+1. **Always scope to @strategy folder** - Use `@strategy` when referencing or creating strategy files
+2. **Use clear, descriptive filenames** following the pattern: `strategy-type-specific-focus.md`
+3. **Reference existing strategy files** when creating new content to maintain consistency
+
+### Key Strategy Files:
+- [tone_of_voice.md](mdc:strategy/tone_of_voice.md) - Brand voice guidelines and writing patterns
+- [brand_analysis.md](mdc:strategy/brand_analysis.md) - Comprehensive brand positioning analysis
+- [market_research.md](mdc:strategy/market_research.md) - Market insights and opportunities
+- [competitor_tracking.md](mdc:strategy/competitor_tracking.md) - Ongoing competitive intelligence
+
+## Workflow Integration
+- Content creation should always reference relevant strategy documents from @strategy
+- Templates in [templates/](mdc:templates) should align with strategy guidelines
+- All AI-generated content must incorporate strategy folder insights for brand consistency, including target analsyis and tone of voice. 

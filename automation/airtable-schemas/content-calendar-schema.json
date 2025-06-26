@@ -1,0 +1,437 @@
+{
+  "name": "Content Calendar",
+  "description": "Master content planning and tracking base for vibe marketing campaigns",
+  "tables": [
+    {
+      "name": "Content Ideas",
+      "description": "Initial content concepts and strategic planning",
+      "fields": [
+        {
+          "name": "Title",
+          "type": "singleLineText",
+          "description": "Working title for the content piece"
+        },
+        {
+          "name": "Status",
+          "type": "singleSelect",
+          "options": [
+            { "name": "Idea", "color": "grayBright" },
+            { "name": "Research", "color": "yellowBright" },
+            { "name": "In Progress", "color": "orangeBright" },
+            { "name": "Review", "color": "blueBright" },
+            { "name": "Published", "color": "greenBright" },
+            { "name": "Paused", "color": "redBright" }
+          ],
+          "description": "Current status in content pipeline"
+        },
+        {
+          "name": "Content Type",
+          "type": "singleSelect",
+          "options": [
+            { "name": "Blog Post", "color": "blue" },
+            { "name": "Case Study", "color": "green" },
+            { "name": "Social Thread", "color": "purple" },
+            { "name": "Newsletter", "color": "orange" },
+            { "name": "Framework Post", "color": "red" },
+            { "name": "Story Post", "color": "pink" },
+            { "name": "Data Analysis", "color": "yellow" }
+          ],
+          "description": "Type of content to be created"
+        },
+        {
+          "name": "Primary Topic",
+          "type": "singleLineText",
+          "description": "Main subject or theme of the content"
+        },
+        {
+          "name": "Target Audience",
+          "type": "multipleSelect",
+          "options": [
+            { "name": "Marketing Agencies", "color": "blue" },
+            { "name": "Business Owners", "color": "green" },
+            { "name": "Content Creators", "color": "purple" },
+            { "name": "AI/Tech Professionals", "color": "orange" },
+            { "name": "Freelancers", "color": "red" },
+            { "name": "Startup Founders", "color": "pink" }
+          ],
+          "description": "Primary audience segments for this content"
+        },
+        {
+          "name": "Emotional Angle",
+          "type": "singleSelect",
+          "options": [
+            { "name": "Curiosity", "color": "blue" },
+            { "name": "Validation", "color": "green" },
+            { "name": "Ambition", "color": "purple" },
+            { "name": "Relief", "color": "orange" },
+            { "name": "Inspiration", "color": "red" },
+            { "name": "Urgency", "color": "yellow" },
+            { "name": "Discovery", "color": "pink" }
+          ],
+          "description": "Primary emotional wrapper for the content"
+        },
+        {
+          "name": "Priority",
+          "type": "singleSelect",
+          "options": [
+            { "name": "High", "color": "red" },
+            { "name": "Medium", "color": "yellow" },
+            { "name": "Low", "color": "gray" }
+          ],
+          "description": "Content creation priority level"
+        },
+        {
+          "name": "Planned Publish Date",
+          "type": "date",
+          "description": "Target publication date"
+        },
+        {
+          "name": "Platforms",
+          "type": "multipleSelect",
+          "options": [
+            { "name": "Blog", "color": "blue" },
+            { "name": "LinkedIn", "color": "green" },
+            { "name": "Twitter", "color": "purple" },
+            { "name": "Newsletter", "color": "orange" },
+            { "name": "YouTube", "color": "red" },
+            { "name": "Medium", "color": "gray" }
+          ],
+          "description": "Platforms where content will be published"
+        },
+        {
+          "name": "Keywords",
+          "type": "multipleSelect",
+          "description": "SEO keywords and content tags"
+        },
+        {
+          "name": "Research Notes",
+          "type": "longText",
+          "description": "Research findings and strategic insights"
+        },
+        {
+          "name": "Brief Description",
+          "type": "longText",
+          "description": "Initial concept and angle description"
+        },
+        {
+          "name": "Success Metrics",
+          "type": "multipleSelect",
+          "options": [
+            { "name": "Views/Impressions", "color": "blue" },
+            { "name": "Engagement Rate", "color": "green" },
+            { "name": "Newsletter Signups", "color": "purple" },
+            { "name": "Website Traffic", "color": "orange" },
+            { "name": "Lead Generation", "color": "red" },
+            { "name": "Share/Viral Rate", "color": "pink" }
+          ],
+          "description": "Key performance indicators to track"
+        },
+        {
+          "name": "Created Date",
+          "type": "createdTime",
+          "description": "When the idea was added"
+        },
+        {
+          "name": "Last Modified",
+          "type": "lastModifiedTime",
+          "description": "Last update timestamp"
+        }
+      ]
+    },
+    {
+      "name": "Content Production",
+      "description": "Active content creation and workflow management",
+      "fields": [
+        {
+          "name": "Content Idea",
+          "type": "linkedRecord",
+          "linkedTable": "Content Ideas",
+          "description": "Link to original content idea"
+        },
+        {
+          "name": "GitHub Branch",
+          "type": "singleLineText",
+          "description": "Git branch name for content development"
+        },
+        {
+          "name": "Draft Status",
+          "type": "singleSelect",
+          "options": [
+            { "name": "AI Generated", "color": "grayBright" },
+            { "name": "First Draft", "color": "yellowBright" },
+            { "name": "Reviewed", "color": "orangeBright" },
+            { "name": "Edited", "color": "blueBright" },
+            { "name": "Final", "color": "greenBright" },
+            { "name": "Needs Revision", "color": "redBright" }
+          ],
+          "description": "Current draft status"
+        },
+        {
+          "name": "Word Count",
+          "type": "number",
+          "description": "Current word count"
+        },
+        {
+          "name": "Reading Time",
+          "type": "formula",
+          "formula": "ROUND({Word Count} / 200) & ' min'",
+          "description": "Estimated reading time"
+        },
+        {
+          "name": "Quality Score",
+          "type": "number",
+          "description": "AI-generated quality score (1-100)"
+        },
+        {
+          "name": "Emotional Resonance Score",
+          "type": "number",
+          "description": "Predicted emotional impact score (1-10)"
+        },
+        {
+          "name": "SEO Score",
+          "type": "number",
+          "description": "SEO optimization score (1-100)"
+        },
+        {
+          "name": "Reviewer",
+          "type": "singleLineText",
+          "description": "Person assigned to review content"
+        },
+        {
+          "name": "Review Notes",
+          "type": "longText",
+          "description": "Feedback and revision requests"
+        },
+        {
+          "name": "GitHub URL",
+          "type": "url",
+          "description": "Link to GitHub file or pull request"
+        },
+        {
+          "name": "Started Date",
+          "type": "date",
+          "description": "When content creation began"
+        },
+        {
+          "name": "Completed Date",
+          "type": "date",
+          "description": "When content was finalized"
+        }
+      ]
+    },
+    {
+      "name": "Published Content",
+      "description": "Live content tracking and performance monitoring",
+      "fields": [
+        {
+          "name": "Content Production",
+          "type": "linkedRecord",
+          "linkedTable": "Content Production",
+          "description": "Link to production record"
+        },
+        {
+          "name": "Published Title",
+          "type": "singleLineText",
+          "description": "Final published title"
+        },
+        {
+          "name": "Publication Date",
+          "type": "date",
+          "description": "Actual publication date"
+        },
+        {
+          "name": "Live URLs",
+          "type": "multipleAttachments",
+          "description": "Links to published content on all platforms"
+        },
+        {
+          "name": "Performance Summary",
+          "type": "longText",
+          "description": "Overall performance analysis"
+        },
+        {
+          "name": "Total Views",
+          "type": "number",
+          "description": "Combined views across all platforms"
+        },
+        {
+          "name": "Total Engagement",
+          "type": "number",
+          "description": "Combined likes, comments, shares"
+        },
+        {
+          "name": "Engagement Rate",
+          "type": "formula",
+          "formula": "ROUND(({Total Engagement} / {Total Views}) * 100, 2) & '%'",
+          "description": "Overall engagement percentage"
+        },
+        {
+          "name": "Newsletter Signups",
+          "type": "number",
+          "description": "New subscribers from this content"
+        },
+        {
+          "name": "Website Traffic",
+          "type": "number",
+          "description": "Website visitors driven by content"
+        },
+        {
+          "name": "Lead Generation",
+          "type": "number",
+          "description": "Qualified leads generated"
+        },
+        {
+          "name": "Revenue Attribution",
+          "type": "currency",
+          "description": "Revenue attributed to this content"
+        },
+        {
+          "name": "Performance Rating",
+          "type": "singleSelect",
+          "options": [
+            { "name": "Excellent", "color": "green" },
+            { "name": "Good", "color": "blue" },
+            { "name": "Average", "color": "yellow" },
+            { "name": "Below Average", "color": "orange" },
+            { "name": "Poor", "color": "red" }
+          ],
+          "description": "Overall performance assessment"
+        },
+        {
+          "name": "Key Learnings",
+          "type": "longText",
+          "description": "Insights for future content optimization"
+        }
+      ]
+    },
+    {
+      "name": "Campaign Tracking",
+      "description": "Multi-content campaign management and coordination",
+      "fields": [
+        {
+          "name": "Campaign Name",
+          "type": "singleLineText",
+          "description": "Campaign title or theme"
+        },
+        {
+          "name": "Campaign Type",
+          "type": "singleSelect",
+          "options": [
+            { "name": "Product Launch", "color": "blue" },
+            { "name": "Thought Leadership", "color": "green" },
+            { "name": "Client Case Study Series", "color": "purple" },
+            { "name": "Educational Series", "color": "orange" },
+            { "name": "Seasonal Campaign", "color": "red" },
+            { "name": "Partnership Content", "color": "pink" }
+          ],
+          "description": "Type of content campaign"
+        },
+        {
+          "name": "Campaign Content",
+          "type": "linkedRecord",
+          "linkedTable": "Content Ideas",
+          "description": "Content pieces in this campaign"
+        },
+        {
+          "name": "Campaign Goal",
+          "type": "singleSelect",
+          "options": [
+            { "name": "Brand Awareness", "color": "blue" },
+            { "name": "Lead Generation", "color": "green" },
+            { "name": "Customer Education", "color": "purple" },
+            { "name": "Community Building", "color": "orange" },
+            { "name": "Sales Support", "color": "red" }
+          ],
+          "description": "Primary campaign objective"
+        },
+        {
+          "name": "Start Date",
+          "type": "date",
+          "description": "Campaign launch date"
+        },
+        {
+          "name": "End Date",
+          "type": "date",
+          "description": "Campaign completion date"
+        },
+        {
+          "name": "Budget",
+          "type": "currency",
+          "description": "Campaign budget allocation"
+        },
+        {
+          "name": "Target Metrics",
+          "type": "longText",
+          "description": "Success metrics and KPI targets"
+        },
+        {
+          "name": "Campaign Status",
+          "type": "singleSelect",
+          "options": [
+            { "name": "Planning", "color": "gray" },
+            { "name": "Active", "color": "green" },
+            { "name": "Completed", "color": "blue" },
+            { "name": "Paused", "color": "yellow" },
+            { "name": "Cancelled", "color": "red" }
+          ],
+          "description": "Current campaign status"
+        }
+      ]
+    }
+  ],
+  "views": [
+    {
+      "name": "Content Pipeline",
+      "table": "Content Ideas",
+      "type": "kanban",
+      "groupBy": "Status",
+      "sortBy": [
+        { "field": "Priority", "direction": "desc" },
+        { "field": "Planned Publish Date", "direction": "asc" }
+      ]
+    },
+    {
+      "name": "Editorial Calendar",
+      "table": "Content Ideas",
+      "type": "calendar",
+      "dateField": "Planned Publish Date",
+      "colorBy": "Content Type"
+    },
+    {
+      "name": "Performance Dashboard",
+      "table": "Published Content",
+      "type": "grid",
+      "sortBy": [
+        { "field": "Performance Rating", "direction": "desc" },
+        { "field": "Publication Date", "direction": "desc" }
+      ]
+    },
+    {
+      "name": "Active Production",
+      "table": "Content Production",
+      "type": "grid",
+      "filterBy": {
+        "Draft Status": ["AI Generated", "First Draft", "Reviewed", "Edited"]
+      }
+    }
+  ],
+  "automations": [
+    {
+      "name": "Trigger Research Workflow",
+      "trigger": "Record created in Content Ideas",
+      "action": "Send webhook to N8N research workflow"
+    },
+    {
+      "name": "Content Generation Ready",
+      "trigger": "Research Notes updated",
+      "condition": "Status = 'Research'",
+      "action": "Update Status to 'Ready for Generation'"
+    },
+    {
+      "name": "Performance Alert",
+      "trigger": "Total Views updated",
+      "condition": "Total Views > 1000",
+      "action": "Send notification to Slack"
+    }
+  ]
+} 
