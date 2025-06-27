@@ -1,60 +1,23 @@
 ---
 description: 
 globs: 
-alwaysApply: false
+alwaysApply: true
 ---
-# Content Workflow Automation
+This rule dicates how you will interact with this repository. 
 
-## GitHub-Native Content Operations
+Any files you generate should be in line with the repository structure.
 
-### Repository Structure
-This repository follows a specific structure for systematic content marketing:
-- [@strategy](mdc:strategy) - Living strategy documents and analysis
+- @strategy/ - Living strategy documents and analysis
 - [content/](mdc:content) - Published content organized by type
 - [templates/](mdc:templates) - Reusable content frameworks
 - [automation/](mdc:automation) - N8N workflows and Airtable schemas
+- @workflows/ - Interactive workflow guides, which require human input, judgement and interative collborative with AI tools. 
 
-### Content Creation Process
-1. **Strategy Reference**: Always consult @strategy folder before creating content
-2. **Template Usage**: Start with appropriate template from [templates/](mdc:templates)
-3. **Version Control**: Treat each content piece as a feature branch
-4. **Automated Research**: Use N8N workflows to gather market intelligence
-5. **AI-Assisted Generation**: Generate content following brand guidelines
-6. **Collaborative Review**: Use pull requests for content approval
+When a user asks you to perform any strategic research:
 
-### Integration Points
+- Always consult the @strategy file and it's associated rule
+- Generate your content in .md format
+- Consult the documents already existing in the folder
 
-#### Airtable Content Calendar
-- Content ideas tracked in [content-calendar-schema.json](mdc:automation/airtable-schemas/content-calendar-schema.json)
-- Status pipeline: Idea → Research → In Progress → Review → Published
-- Performance metrics automatically tracked post-publication
-
-#### N8N Automation Workflows
-- Research workflow triggered by new Airtable entries
-- Content generation using strategy documents and templates
-- GitHub commits created automatically for review process
-- Multi-platform distribution upon approval
-
-### Quality Standards
-- Every piece must include specific data and timeframes
-- Open with human moments following Alexander's narrative style
-- Include clear, actionable frameworks
-- Maintain collaborative rather than prescriptive tone
-- Reference [.cursorrules](mdc:.cursorrules) for consistent voice
-
-## File Naming Conventions
-- Blog posts: `YYYY-MM-DD-descriptive-title.md`
-
-/workflows/
-  /seo/
-    - content-strategy-research.md (your example)
-    - keyword-gap-analysis.md
-    - competitor-content-audit.md
-    
-  /social/
-    - platform-strategy-development.md
-    - influencer-research-workflow.md
-  /email/
-    - list-segmentation-research.md
-  /content/
-    - editorial-calendar-planning.md
+When a user asks you to create content ideas:
+- Always consult the @strategy folder to ensure consistent tone of voice 

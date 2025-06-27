@@ -34,16 +34,6 @@ Detailed guide to your brand voice, writing patterns, and communication style.
 - Platform-specific voice modulation
 - Key phrases and signature concepts
 
-### `competitor_tracking.md`
-Ongoing analysis of competitor activities, campaigns, and market movements.
-
-**Update Frequency**: Weekly
-**Key Sections**:
-- Competitor content analysis
-- Campaign performance tracking
-- New market entrants
-- Strategic opportunities identified
-
 ## Using Strategy Documents
 
 ### For Content Creation
