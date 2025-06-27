@@ -1,0 +1,9 @@
+---
+description: Always use this rule if the user want to generate new content ideas
+globs: 
+alwaysApply: false
+---
+If a user ask for new content ideas, read the prompt below and follow the instructions:
+[content-idea-generation.md](mdc:prompts/content-idea-generation.md)
+
+Make sure you refer to specific documents that the prompt mentions. Document paths will be present where relevant.
