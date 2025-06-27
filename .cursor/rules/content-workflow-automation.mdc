@@ -12,6 +12,7 @@ Any files you generate should be in line with the repository structure.
 - [templates/](mdc:templates) - Reusable content frameworks
 - [automation/](mdc:automation) - N8N workflows and Airtable schemas
 - @workflows/ - Interactive workflow guides, which require human input, judgement and interative collborative with AI tools. 
+- @prompts/ - Prompts detailed instructions for specific tasks
 
 When a user asks you to perform any strategic research:
 
