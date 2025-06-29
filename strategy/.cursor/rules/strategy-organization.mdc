@@ -1,5 +1,5 @@
 ---
-description: Use this rule when you are performing content ideation, or anything to do with strategy . 
+description: Use this rule when you are performing content ideation, or anything to do with strategy changes.
 globs: 
 alwaysApply: false
 ---
@@ -24,3 +24,4 @@ For example:
 1. **Always scope to @strategy folder** - Use `@strategy` when referencing or creating strategy files
 2. **Use clear, descriptive filenames** - Ensure all of your analysis is scoped to one of the files mentioned above. Do not create new ones
 3. **Reference existing strategy files** when creating new content to maintain consistency
+4. **Any changes in strategy can only update the three files mentioned above** you can however add information about the changes you made in @strategy/changelog using the format: YYYY-MM-DDTHH-MM-SSZ_description.md

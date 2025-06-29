@@ -5,14 +5,18 @@ alwaysApply: true
 ---
 This rule dicates how you will interact with this repository. 
 
-Any files you generate should be in line with the repository structure.
+Do not create any files unless explicitely asked to do so. Any file you generate must be in line with the repository structure.
 
-- @strategy/ - Living strategy documents and analysis
-- [content/](mdc:content) - Published content organized by type
-- [templates/](mdc:templates) - Reusable content frameworks
-- [automation/](mdc:automation) - N8N workflows and Airtable schemas
-- @workflows/ - Interactive workflow guides, which require human input, judgement and interative collborative with AI tools. 
-- @prompts/ - Prompts detailed instructions for specific tasks
+- strategy/ - Living strategy documents and analysis
+    - brand_analysis.md
+    - market_research.md
+    - tone_of_voice.md
+    - blog - Blog specific strategy documents
+        - seo-content-opportunities.md
+- content - Content organized by type
+- templates - Frameworks for all documents. Always use them when creating a document. 
+- workflows/ - Interactive workflow guides, which require human input, judgement and interative collborative with AI tools.For human use
+- prompts/ - Prompts detailed instructions for specific tasks
 
 When a user asks you to perform any strategic research:
 
@@ -22,3 +26,5 @@ When a user asks you to perform any strategic research:
 
 When a user asks you to create content ideas:
 - Always consult the @strategy folder to ensure consistent tone of voice 
+
+When working with content wether ideation, writing, or the user asking about their current content calendar / status. You must use the content assistant MCP to retrieve the relevant information from Airtable. 

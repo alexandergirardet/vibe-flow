@@ -7,3 +7,7 @@ If a user ask for new content ideas, read the prompt below and follow the instru
 [content-idea-generation.md](mdc:prompts/content-idea-generation.md)
 
 Make sure you refer to specific documents that the prompt mentions. Document paths will be present where relevant.
+
+All current content ideas are in the airtable which is accessible through the content assistant MCP.
+
+You must never write articles from scratch. Only write articles through the content assistant MCP. 
